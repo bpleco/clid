@@ -53,6 +53,7 @@
     "bson": "^4.6.0",
     "chalk": "^4.1.2",
     "clipboardy": "^2.3.0",
+    "commander": "^8.3.0",
     "copy-text-to-clipboard": "^2.2.0",
     "figures": "^3.2.0",
     "nanoid": "^3.1.30",
