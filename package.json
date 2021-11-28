@@ -15,6 +15,9 @@
     "dev": "nodemon --signal SIGINT --exec babel-node --extensions \".ts\" lib/index.ts",
     "compile": "rm -rf dist && tsc && babel --extensions \".ts\" --out-dir=dist lib"
   },
+  "repository": {
+    "url": "https://github.com/bpleco/clid"
+  },
   "author": "Ben Pleco",
   "license": "MIT",
   "devDependencies": {
