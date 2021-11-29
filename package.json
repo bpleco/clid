@@ -1,6 +1,6 @@
 {
   "name": "@bpleco/clid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for quickly generating ID's from wellknown ID libraries.",
   "main": "dist/index.js",
   "files": [
@@ -54,11 +54,9 @@
     "chalk": "^4.1.2",
     "clipboardy": "^2.3.0",
     "commander": "^8.3.0",
-    "copy-text-to-clipboard": "^2.2.0",
     "figures": "^3.2.0",
     "nanoid": "^3.1.30",
     "shortid": "^2.2.16",
-    "signale-awaitless": "^2.0.0",
     "slug": "^5.1.0",
     "uuid": "^8.3.2"
   }
