@@ -14,10 +14,10 @@ program
   .command('hash <text>')
   .description('turn a text input into a md5 with optional secret')
   .option('-s --secret <secret>', 'An optional secret to hash the string with ')
-  .action((_x, { parent, secret }) => {
-    const { args } = parent;
+  .action((string, args) => {
+    const { secret } = args;
 
-    require('../dist/ids/hash').default(args.join(' '), secret);
+    require('../dist/ids/hash').default(string, secret);
   });
 
 program
