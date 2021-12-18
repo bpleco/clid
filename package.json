@@ -11,8 +11,10 @@
     "clid": "./bin/main.js"
   },
   "scripts": {
-    "dev": "nodemon --signal SIGINT --exec babel-node --extensions \".ts\" lib/index.ts",
-    "build": "rm -rf dist && tsc && babel --extensions \".ts\" --out-dir=dist lib"
+    "clean": "rm -rf dist",
+    "dev": "npm run clean && babel --extensions \".ts\" src --out-dir=dist --watch",
+    "build": "npm run clean && rm -rf dist && tsc && babel --extensions \".ts\" --out-dir=dist lib",
+    "publish": "npm publish --access-public"
   },
   "repository": {
     "url": "https://github.com/bpleco/clid"
@@ -34,9 +36,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
-    "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
   "keywords": [
