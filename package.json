@@ -1,6 +1,6 @@
 {
   "name": "@bpleco/clid",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "CLI tool for quickly generating ID's from wellknown ID libraries.",
   "main": "dist/index.js",
   "files": [
@@ -11,9 +11,8 @@
     "clid": "./bin/main.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --signal SIGINT --exec babel-node --extensions \".ts\" lib/index.ts",
-    "compile": "rm -rf dist && tsc && babel --extensions \".ts\" --out-dir=dist lib"
+    "build": "rm -rf dist && tsc && babel --extensions \".ts\" --out-dir=dist lib"
   },
   "repository": {
     "url": "https://github.com/bpleco/clid"
